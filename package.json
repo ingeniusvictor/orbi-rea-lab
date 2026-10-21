@@ -1,0 +1,20 @@
+{
+  "name": "orbi-rea-lab",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "node --test",
+    "test:dashboard": "node --test tests/dashboard-data.test.mjs",
+    "test:fixture": "node --test fixtures/solar-quote-demo/test/quote.test.js"
+  },
+  "dependencies": {
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
