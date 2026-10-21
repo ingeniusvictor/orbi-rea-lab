@@ -21,9 +21,10 @@
 
 ## P3 — producto web
 - [x] Implementación inicial del dashboard estático en rama de desarrollo, con casos sintéticos y pruebas
-- [ ] Confirmar CI de build y unir PR a `main`
+- [x] CI de build y pruebas en verde; PR #1 fusionado a `main` (`9ca91ba`)
 - [ ] Añadir lockfile npm y política de dependencias
-- [ ] Decidir despliegue de demostración en Vercel
+- [x] Proyecto Vercel ORBI conectado; primer despliegue de demo estática en READY (protegido con Vercel Authentication)
+- [ ] Verificar UX y accesibilidad mediante Browser QA
 - [ ] Diseñar API autenticada y worker aislado (no implementados)
 - [ ] Aprobación de controles de seguridad antes de procesar archivos reales
 
