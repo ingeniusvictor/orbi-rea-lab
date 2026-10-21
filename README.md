@@ -19,13 +19,14 @@ Requiere Node.js 22 o superior:
 ```powershell
 cd "$HOME\orbi-projects\orbi-rea-lab"
 git pull --ff-only origin main
-npm install
+npm ci
 npm test
 npm run dev
 # abrir http://localhost:3000
 ```
 
-Para comprobar el artefacto estático ejecuta `npm run build`; la carpeta `out/` no se incluye en Git. Consulta [docs/DASHBOARD.md](docs/DASHBOARD.md).
+Para comprobar el artefacto estático ejecuta `npm run build
+node scripts/verify-static-export.mjs`; la carpeta `out/` no se incluye en Git. Consulta [docs/DASHBOARD.md](docs/DASHBOARD.md).
 
 **Importante:** los tres casos del dashboard son demostraciones escritas a mano, no resultados extraídos de REA. El prototipo no ofrece subida de archivos, endpoints de análisis, ejecución de código, autenticación ni conexión MCP.
 

@@ -7,7 +7,9 @@ on:
       - 'lib/**'
       - 'tests/**'
       - 'package.json'
+      - 'package-lock.json'
       - 'next.config.mjs'
+      - 'scripts/verify-static-export.mjs'
       - '.github/workflows/dashboard-check.yml'
   pull_request:
     paths:
@@ -16,7 +18,9 @@ on:
       - 'lib/**'
       - 'tests/**'
       - 'package.json'
+      - 'package-lock.json'
       - 'next.config.mjs'
+      - 'scripts/verify-static-export.mjs'
       - '.github/workflows/dashboard-check.yml'
 permissions:
   contents: read
@@ -28,9 +32,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Install dashboard dependencies
-        run: npm install --no-audit --no-fund
+          cache: 'npm'
+      - name: Install reproducible dependencies
+        run: npm ci --no-audit --no-fund
       - name: Run all Node tests
         run: npm test
       - name: Validate static Next.js build
         run: npm run build
+      - name: Verify static routes and that no Evidence IDs ship
+        run: node scripts/verify-static-export.mjs

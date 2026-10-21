@@ -22,7 +22,9 @@
 ## P3 — producto web
 - [x] Implementación inicial del dashboard estático en rama de desarrollo, con casos sintéticos y pruebas
 - [x] CI de build y pruebas en verde; PR #1 fusionado a `main` (`9ca91ba`)
-- [ ] Añadir lockfile npm y política de dependencias
+- [x] Añadir lockfile npm y usar `npm ci` para CI reproducible
+- [x] Comprobar las seis rutas estáticas y excluir Evidence IDs en HTML
+- [ ] Automatizar pruebas E2E de accesibilidad en navegador
 - [x] Proyecto Vercel ORBI conectado; primer despliegue de demo estática en READY (protegido con Vercel Authentication)
 - [ ] Verificar UX y accesibilidad mediante Browser QA
 - [ ] Diseñar API autenticada y worker aislado (no implementados)
