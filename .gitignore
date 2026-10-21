@@ -1,0 +1,32 @@
+# Evidencia y datos de investigación: nunca versionar artefactos brutos
+/evidence/**
+!/evidence/.gitkeep
+/reports/private/**
+*.asar
+*.apk
+*.exe
+*.dll
+*.pfx
+*.p12
+*.pem
+*.key
+*.har
+*.saz
+*.log
+.env
+.env.*
+!.env.example
+node_modules/
+.DS_Store
+Thumbs.db
+
+# ORBI REA LAB - local and sensitive files
+/evidence/local/
+/reports/ORBI_REA_MCP_VALIDATION.md
+/node_modules/
+.env
+.env.*
+!.env.example
+*.log
+*.backup.ps1
+*.original.ps1

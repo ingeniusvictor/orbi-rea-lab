@@ -1,0 +1,8 @@
+{
+  "name": "orbi-solar-quote-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
+  "description": "Fixture didáctico y sintético para probar REA; no es un cotizador comercial ni una herramienta de diseño eléctrico."
+}

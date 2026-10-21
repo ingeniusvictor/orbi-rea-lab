@@ -1,0 +1,16 @@
+name: fixture-unit-tests
+on:
+  push:
+  pull_request:
+jobs:
+  node-fixture:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run synthetic fixture tests
+        run: node --test fixtures/solar-quote-demo/test/quote.test.js
