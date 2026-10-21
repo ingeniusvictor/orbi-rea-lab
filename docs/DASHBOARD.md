@@ -12,15 +12,16 @@
 Requiere Node.js 22+ y acceso al registro de npm.
 
 ```bash
-npm install
+npm ci
 npm test
 npm run dev
 # http://localhost:3000
 npm run build
+node scripts/verify-static-export.mjs
 # salida estática en out/
 ```
 
-Esta demostración no exige REA ni lee evidencias locales. El paquete fija versiones directas de Next.js y React; se debe incorporar un lockfile verificado para instalaciones reproducibles antes de considerar producción.
+Esta demostración no exige REA ni lee evidencias locales. El repositorio incluye `package-lock.json` (npm lockfile v3), generado por GitHub Actions y versionado. Para instalaciones reproducibles usar `npm ci`; CI valida nueve pruebas Node, compilación y seis rutas HTML estáticas. Esto no sustituye las pruebas E2E en navegador.
 
 ## Puerta de seguridad
 
