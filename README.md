@@ -49,3 +49,12 @@ La evidencia completa, el resumen y los archivos de diagnóstico se guardan en `
 Antes de conectar una API, un worker REA o datos reales se requieren autorización del objetivo, aislamiento de procesos, autenticación y autorización, protección de secretos, auditoría, controles de red y política de retención. **Nunca exponer puertos CDP/MCP o una terminal al Internet público.**
 
 El repositorio GitHub se encuentra públicamente visible mientras no se cambie su configuración. Solo se incluyen ejemplos sintéticos y código revisado. Véase [docs/SECURITY.md](docs/SECURITY.md).
+
+## Despliegue de demostración
+
+El proyecto Vercel `orbi-rea-lab` está conectado a `ingeniusvictor/orbi-rea-lab` en el equipo ORBI (`orbi4`). El primer despliegue del commit `9ca91ba` terminó en estado `READY` el 21 de octubre de 2026, en el objetivo que Vercel clasificó como **production**.
+
+- URL: https://orbi-rea-lab.vercel.app
+- Protección observada del proyecto: Vercel Authentication habilitada (`all_except_custom_domains`). La accesibilidad concreta debe comprobarse desde el navegador de un usuario autorizado.
+- Contenido: únicamente una exportación estática Next.js y casos sintéticos; sin worker REA ni API.
+- No confundir un despliegue READY con pruebas de interfaz E2E. Falta realizar Browser QA y fijar dependencias transitivas con lockfile.

@@ -30,4 +30,4 @@ Antes de incluir una API y worker aislado se requiere: autenticación y permisos
 
 ## Vercel
 
-Se puede desplegar como sitio **estático** desde la raíz del repositorio después de validar CI. No se deben configurar secretos del REA worker ni abrir puertos de depuración. Un eventual worker local requiere integración privada diferente y autorización explícita.
+El sitio **estático** se desplegó desde la raíz del repositorio en Vercel ORBI (`orbi-rea-lab.vercel.app`). Estado inicial READY, commit `9ca91ba`, Git conectado. Vercel lo clasificó como producción; su protección de acceso está configurada con Vercel Authentication. La experiencia completa de navegador y accesibilidad todavía no están verificadas. No se deben configurar secretos del REA worker ni abrir puertos de depuración. Un eventual worker local requiere integración privada diferente y autorización explícita.
