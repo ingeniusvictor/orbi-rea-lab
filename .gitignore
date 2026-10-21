@@ -30,3 +30,8 @@ Thumbs.db
 *.log
 *.backup.ps1
 *.original.ps1
+
+# Static Next.js dashboard build outputs
+.next/
+out/
+.vercel/

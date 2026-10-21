@@ -22,6 +22,7 @@ test("category and text search are combinable and accent-insensitive for case", 
   assert.equal(filterInvestigations().length, investigations.length);
   assert.equal(filterInvestigations({ category: "Android" }).length, 1);
   assert.equal(filterInvestigations({ query: "solar" }).length, 1);
+  assert.equal(filterInvestigations({ query: "auditoria" }).length, 1);
   assert.equal(filterInvestigations({ query: "inexistente" }).length, 0);
   assert.deepEqual(categories, ["Todos", "JavaScript", "Web", "Android"]);
 });
